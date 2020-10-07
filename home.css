@@ -1,0 +1,65 @@
+footer
+{
+	background-color:black;
+	height:20%;
+text-align:center;
+padding:25px;
+
+	color:white;
+	
+}
+main
+{
+
+	height:900px;
+	background-color:pink;
+	
+}
+h3
+{
+	text-align:center;
+	color:white;
+	text-shadow:2px 3px 3px blue;
+}
+section
+{
+	background-color:#ff3385;
+	border:2px dotted blue;
+	height:70%;
+}
+/*.text
+{
+
+	margin-top:-20px;
+}*/
+.btn
+{
+	border-color:black;
+}
+h1
+{
+text-align:center;
+	color:white;
+	letter-spacing:5px;
+	text-shadow:2px 3px 3px blue;
+}
+
+button
+{
+
+	background-color:#ff3385;
+	color:white;
+	padding:10px;
+	border-color:white;
+	
+}
+button:hover
+{
+	color:#ff1a75;
+	background-color:white;
+}
+
+img
+{
+	margin-left:15%;
+}

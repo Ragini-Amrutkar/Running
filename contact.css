@@ -1,0 +1,25 @@
+footer
+{
+	background-color:black;
+	height:20%;
+	color:white;
+	text-align:center;
+	padding:28px;
+}
+main
+{
+margin-left:15%;
+margin-right:15%;
+	height:1280px;
+	background-color:#292628;
+}
+form
+{
+	text-align:center;
+	color:white;
+}
+input
+{
+	width:40%;
+	
+}

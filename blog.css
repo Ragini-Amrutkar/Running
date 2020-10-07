@@ -1,0 +1,69 @@
+footer
+{
+	background-color:black;
+	height:20%;
+	color:white;
+	text-align:center;
+	padding:28px;
+}
+main
+{
+	margin-left:15%;
+	border:2px solid tomato;
+margin-right:15%;
+	height:1850px;
+	background-color:#292628;
+}
+
+span
+{
+	color:white;
+	
+}
+h5
+{
+	color:white;
+	text-align:center;
+	
+}
+.one
+{
+	text-align:center;
+	color:white;
+	float:right;
+	
+}
+.two
+{
+	text-align:center;
+	float:left;
+	color:white;
+}
+.onee
+{
+	text-align:center;
+	color:white;
+	float:right;
+}
+.twoo
+{
+	text-align:center;
+	color:white;
+	float:left;
+}
+h1
+{
+	text-align:center;
+}
+button
+{
+	background-color:#ff3385;
+	color:white;
+	padding:10px;
+	border-color:white;
+}
+button:hover
+{
+	color:#ff1a75;
+	background-color:white;
+}

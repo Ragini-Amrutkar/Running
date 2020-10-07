@@ -1,0 +1,141 @@
+<html>
+<link rel="stylesheet" href="contact.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<title>Runner</title>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  
+  <!-- Just an image -->
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="D:\RAGINI\Web Developement\Runner Template\Images\logo.png" width="85%" height="80" alt="" loading="lazy">
+  </a>
+</nav>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <b><a class="nav-link" href="home.html">HOME <span class="sr-only">(current)</span></a></b>
+      </li>
+      <li class="nav-item">
+        <b><a class="nav-link" href="about.html">ABOUT</a></b>
+      </li>
+      <li class="nav-item">
+        <b><a class="nav-link" href="runner.html">RUNNING</a></b>
+      </li>
+	  <li class="nav-item">
+        <b><a class="nav-link" href="blog.html">BLOG</a></b>
+      </li>
+	  <li class="nav-item">
+        <b><a class="nav-link" href="contact.html" style="color:#FF33DA">CONTACT</a></b>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+ <br>
+<form onsubmit="return myfun()">
+  <div class="form-group">
+  <h1 style="color:#FF33DA"><u>CONTACT US</u></h1>
+  <img src="D:\RAGINI\Web Developement\Runner Template\Images\contact.png">
+  <br><br>
+  <p>
+<b>ADDRESS</b>
+<br>
+<span>This is just a placeholder so that you would know</span>
+<br> 
+<span>what the site would look like.</span>
+<br><br>
+<b>NUMBERS</b>
+<br>
+<span>+123456789 or +123456789</span>
+<br><br>
+<b>E-MAIL</b>
+<br>
+<span>info@rnrnr.com</span>
+<br>
+<h2>JOIN RNRNR NOW</h2></p>
+<hr style="width:20%;
+	height:5px;
+	background-color:white;">
+
+<br>
+<input type="text" id="UN" placeholder="NAME">
+<p id="un" style="color:red"></p>
+
+<input type="password" id="PWD"  placeholder="PASSWORD">
+<p id="pwd" style="color:red"></p>
+
+
+<input type="password" id="CPWD" placeholder="RE-TYPE PASSWORD">
+<p id="cpwd" style="color:red"></p>
+
+<input type="text" id="NUMBER" placeholder="NUMBER"> 
+
+<p id="number" style="color:red"></p>
+
+  </div>
+  
+  <button type="submit" class="btn btn-primary" id="submit" >Submit</button>
+</form>
+
+</main>
+
+<script>
+
+
+function myfun()
+{
+	var name=document.getElementById("UN").value;
+	var pass=document.getElementById("PWD").value;
+	var cpass=document.getElementById("CPWD").value;
+	var number=document.getElementById("NUMBER").value;
+	if(name=="")
+	{
+		document.getElementById("un").innerHTML="**Must be filled**";
+		return false;
+	}
+	if(pass=="")
+	{
+		document.getElementById("pwd").innerHTML="**Must be filled**";
+		return false;
+	}
+	if(cpass=="")
+	{
+		document.getElementById("cpwd").innerHTML="**Must be filled**";
+		return false;
+	}
+	if(pass!==cpass)
+	{
+	document.getElementById("cpwd").innerHTML="**Password not matching**";
+	return false;
+	}
+	if(number=="")
+	{
+		document.getElementById("number").innerHTML="**Must be filled**";
+		return false;
+	}
+	if(isNaN(number))
+	{
+	document.getElementById("number").innerHTML="**Contain Only digit**";
+	return false;
+	}
+	if(number.length!=10)
+	{
+	document.getElementById("number").innerHTML="**Must be 10 digit**";
+	return false;
+	}
+}
+</script>
+
+<footer>
+
+<p>© 2023 by RNRNR. All rights reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
